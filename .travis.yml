@@ -29,7 +29,7 @@ script:
 - node_modules/.bin/newman run tests/postman_collection.json -e tests/postman_environment.json
 after_success:
 - docker login -u $DOCKER_USER -p $DOCKER_PASS
-- docker tag threadgoldc/assignment_2 threadgoldc/assignment_2
+- docker tag swagger-spring-example:1.0.0 threadgoldc/assignment_2
 - docker push threadgoldc/assignment_2
 env:
   global:
