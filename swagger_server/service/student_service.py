@@ -47,7 +47,7 @@ def get_student_by_id(student_id, subject):
     else:
         for k, v in student.grades.items():
             if k == subject:
-                return student 
+                return student
 
 def get_student_by_last_name(last_name):
     queries = []
